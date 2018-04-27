@@ -3,14 +3,14 @@ steps:
     command: rspec
     timeout: 5
     plugins:
-      docker-compose#v1.3.2:
+      docker-compose#v2.1.0:
         run: test
 
   - label: ":rubocop: rubocop"
     command: rubocop
     timeout: 5
     plugins:
-      docker-compose#v1.3.2:
+      docker-compose#v2.1.0:
         run: test
 
   - label: ":sparkles: plugin lint"
